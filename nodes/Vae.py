@@ -144,7 +144,7 @@ class VAELoader:
     RETURN_TYPES = ("VAE",)
     FUNCTION = "load_vae"
 
-    CATEGORY = "openai/consistencydecoder"
+    CATEGORY = "♾️Mixlab/consistencydecoder"
 
     #TODO: scale factor?
     def load_vae(self, vae_name):
@@ -164,7 +164,7 @@ class VAEDecode:
     RETURN_TYPES = ("IMAGE",)
     FUNCTION = "decode"
 
-    CATEGORY = "openai/consistencydecoder"
+    CATEGORY = "♾️Mixlab/consistencydecoder"
 
     def decode(self, vae, samples):
         image = vae.decode(samples["samples"].to("cuda:0"))
